@@ -1,0 +1,43 @@
+body {
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.gallery {
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: start;
+  // gap: 40px;
+  display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  align-items: start;
+  // grid-template-rows: autoflow;
+  // grid-auto-flow: dense;
+  grid-template-rows: masonry;
+  gap: 40px;
+}
+
+.gallery-thumbnail {
+  max-width: 310px;
+  position: relative;
+  img {
+    width: 100%;
+    display: block;
+  }
+  .thumbnail-text {
+    margin: 32px;
+    position: absolute;
+    bottom: 0;
+  }
+}

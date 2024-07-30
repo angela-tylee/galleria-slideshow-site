@@ -5,62 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style/all.css">
   <title>Frontend Mentor | Galleria slideshow site</title>
 </head>
 <body>
 
   <%- include('./layout/header.ejs'); -%>
 
-  Start slideshow
+  <header class="container">
+    <div class="logo">galleria.</div>
+    <button type="button">Start slideshow</button>
+  </header>
 
-  Starry Night
-  Vincent Van Gogh
-
-  Girl with a Pearl Earring
-  Johannes Vermeer
-
-  Guernica
-  Pablo Picasso
-
-  Penitent Magdalene
-  Artemisia Gentileschi
-
-  The Storm on the Sea of Galilee
-  Rembrandt
-
-  The Great Wave off Kanagawa
-  Hokusai
-
-  Van Gogh Self-portrait
-  Vincent Van Gogh
-
-  The Sleeping Gypsy
-  Henri Rousseau
-
-  Lady with an Ermine
-  Leonardo da Vinci
-
-  The Night Café
-  Vincent Van Gogh
-
-  The Basket of Apples
-  Paul Cézanne
-
-  The Boy in the Red Vest
-  Paul Cézanne
-
-  Arnolfini Portrait
-  Jan van Eyck
-
-  Mona Lisa
-  Leonardo da Vinci
-
-  The Swing
-  Jean-Honoré Fragonard
+  <main class="container gallery">
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/starry-night/thumbnail.jpg" alt="starry-night">
+      <div class="thumbnail-text">
+        <h2>Starry Night</h2>
+        <h3>Vincent Van Gogh</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/girl-with-pearl-earring/thumbnail.jpg" alt="girl-with-pearl-earing">
+      <div class="thumbnail-text">
+        <h2>Girl with a Pearl Earring</h2>
+        <h3>Johannes Vermeer</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/guernica/thumbnail.jpg" alt="guernica">
+      <div class="thumbnail-text">
+        <h2>Guernica</h2>
+        <h3>Pablo Picasso</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/penitent-magdalene/thumbnail.jpg" alt="penitent-magdalene">
+      <div class="thumbnail-text">
+        <h2>Penitent Magdalene</h2>
+        <h3>Artemisia Gentileschi</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg" alt="the-storm-on-the-sea-of-galilee">
+      <div class="thumbnail-text">
+        <h2>The Storm on the Sea of Galilee</h2>
+        <h3>Rembrandt</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/the-great-wave-off-kanagawa/thumbnail.jpg" alt="the-great-wave-off-kanagawa">
+      <div class="thumbnail-text">
+        <h2>The Great Wave off Kanagawa</h2>
+        <h3>Hokusai</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/van-gogh-self-portrait/thumbnail.jpg" alt="van-gogh-self-portrait">
+      <div class="thumbnail-text">
+        <h2>Van Gogh Self-portrait</h2>
+        <h3>Vincent Van Gogh</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/the-sleeping-gypsy/thumbnail.jpg" alt="the-sleeping-gypsy">
+      <div class="thumbnail-text">
+        <h2>The Sleeping Gypsy</h2>
+        <h3>Henri Rousseau</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/lady-with-an-ermine/thumbnail.jpg" alt="lady-with-an-Ermine">
+      <div class="thumbnail-text">
+        <h2>Lady with an Ermine</h2>
+        <h3>Leonardo da Vinci</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/the-night-cafe/thumbnail.jpg" alt="the-night-cafe">
+      <div class="thumbnail-text">
+        <h2>The Night Café</h2>
+        <h3>Vincent Van Gogh</h3>
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/the-basket-of-apples/thumbnail.jpg" alt="the-basket-of-apples">
+      <div class="thumbnail-text">
+        <h2>The Basket of Apples</h2>
+        <h3>Paul Cézanne</h3>
+      </div>
+    </div>
+    <!-- <div class="gallery-thumbnail">
+      <img src="./public/assets/thumbnail.jpg" alt="">
+      <div class="thumbnail-text">
+        The Boy in the Red Vest
+        Paul Cézanne
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/thumbnail.jpg" alt="">
+      <div class="thumbnail-text">
+        Arnolfini Portrait
+        Jan van Eyck
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/thumbnail.jpg" alt="">
+      <div class="thumbnail-text">
+        Mona Lisa
+        Leonardo da Vinci
+      </div>
+    </div>
+    <div class="gallery-thumbnail">
+      <img src="./public/assets/thumbnail.jpg" alt="">
+      <div class="thumbnail-text">
+        The Swing
+        Jean-Honoré Fragonard
+      </div>
+    </div> -->
+  </main>
 
   <%- include('./layout/footer.ejs'); -%>
-  
+
   <script type="module" src="/main.js"></script>
 </body>
 </html>
